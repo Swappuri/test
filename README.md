@@ -1,7 +1,7 @@
 // Student Names: Swapnil, Evan
 // Student IDs: 001314459, 001312647
 
---------------------------------
+_______________________________
 create_database.sql code:
   create database nyc_taxi_database;
   use nyc_taxi_database;
@@ -22,7 +22,7 @@ create_database.sql code:
   tip_amount float(255, 2),
   tolls_amount float(255, 2),
   total_amount float(255, 2));
---------------------------------
+_______________________________
 insert_data.py code:
   import csv
   import mysql.connector
@@ -72,7 +72,7 @@ insert_data.py code:
   mydb.commit()
   mycursor.close()
   mydb.close()
---------------------------------
+_______________________________
 clean_and_query.sql code:
   set SQL_SAFE_UPDATES = 0;
   
@@ -94,7 +94,7 @@ clean_and_query.sql code:
   select payment_type, avg(tip_amount) as average_tip
   from nyc_taxi_table
   group by payment_type;
---------------------------------
+_______________________________
 
 // ## Course Number: 3337
 // ## Course Name: Database Theory and Applications
