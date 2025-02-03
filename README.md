@@ -41,7 +41,7 @@ insert_data.py code:
                                   payment_type, fare_amount, surcharge, mta_tax, tip_amount, tolls_amount, total_amount)
                                   values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
   
-  batch_size = 10000
+  batch_size = 1000
   rows = []
   
   with open("taxi-data-sorted-small.csv", "r") as f:
